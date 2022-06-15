@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Sample project to demonstrate error with Craco, babel-plugin-styled-components and tests
+
+1. Bootstrap a new application with create-react-app
+2. Add stable version of yarn
+3. Add craco
+4. Add babel-plugin-styled-components to craco.config.js
+5. "yarn test"
+
+```
+Determining test suites to run...
+
+  ● Test suite failed to run
+
+    TypeError: babelJest.createTransformer is not a function
+
+      at createJestBabelTransform (node_modules/@craco/craco/lib/features/jest/create-jest-babel-transform.js:56:22)
+      at Object.<anonymous> (node_modules/@craco/craco/lib/features/jest/jest-babel-transform.js:9:8)
+      at node_modules/@jest/transform/build/ScriptTransformer.js:382:73
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
